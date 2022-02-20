@@ -1,1 +1,9 @@
-<%= link_to "Add new list", new_list_path %>
+<div class="row gx-5 gy-5">
+  <% @lists.each do |list| %>
+  <div class="col-md-3">
+    <%= link_to list.name, list_path(list) %>
+    <%= list.bookmarks.count %> bookmarks
+    <%= link_to "delete", list_path(list), data: { confirm: 'Are you sure?' }, method: :delete %>
+  </div>
+  <% end %>
+</div>

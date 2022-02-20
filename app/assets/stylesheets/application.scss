@@ -11,3 +11,13 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.top-menu {
+  padding-bottom: 20px;
+}
+
+.movie-thumb {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}

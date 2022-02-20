@@ -11,6 +11,23 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <ul class="nav">
+        <li>
+          <h1>Watch lists</h1>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Lists", lists_path(), class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "New List", new_list_path(), class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Movies", movies_path(), class: "nav-link" %>
+        </li>
+      </ul>
+
+      <%= yield %>
+    </div>
   </body>
 </html>
